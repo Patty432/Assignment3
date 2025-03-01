@@ -1,0 +1,89 @@
+1. Paste the console output you saved at the end of step 3.C (2 points)
+
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 372 bytes | 372.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Patty432/Assignment3.git
+   0dbc338..78f4348  master -> master
+
+2. How many commits have been done to the repository (not only by you, but by anyone) so far? Write the git command you used to get this information (4 points)
+
+patriciachung@MacBookPro Assignment3 % git log --oneline
+
+088fdf5 (HEAD -> master, origin/master, origin/HEAD) Created answers.txt inside docs folder
+36ac516 Added status.txt with git status output
+78f4348 Added repository owner information (name and FSUID) to README.md
+0dbc338 Updated information files  The information files have been updated to describe the current state of the repository.  Repository owner information added to README.md
+f4975e5 -> Adding an empty README.md file
+e424a92 -> Tracking .gitignore
+03106e9 -> Declared the trivial destructors for all classes -> Fully formatted toString methods for all classes -> Added test cases in the main method for testing the implementations -> Added validation on value for engine sizes in the  Car class
+f9cd890 -> Partial implementation of PoweredVehicle and Car -> Definition of virtual functions
+f9c24b0 Refactored Vehicle class to separate definition and declarations Added mileageEstimate abstract method to Vehicle Implemented the Bicycle class
+4f6c88c Base Vehicle class created
+
+answer: 10 commits created.
+
+3. When was the README.md  file modified last? Write the git command you used to get this information (4 points)
+
+patriciachung@MacBookPro Assignment3 % git log -- README.md
+
+commit 78f434893112adc6701d96b4ff5667a825f3b2cf
+Author: Patricia Chung <patriciachung@Patricias-MacBook-Pro.local>
+Date:   Fri Feb 28 21:20:03 2025 -0500
+
+    Added repository owner information (name and FSUID) to README.md
+
+commit 0dbc338f7844a05f3e274f310487bf0d3ed0b779
+Author: Patty432 <75273238+Patty432@users.noreply.github.com>
+Date:   Fri Feb 28 18:15:19 2025 -0500
+
+    Updated information files  The information files have been updated to describe the current state of the repository.  Repository owner information added to README.md
+    
+    Updated information files
+    
+    The information files have been updated to describe the current state of the repository.
+    
+    Repository owner information added to README.md
+
+commit f4975e5d56ff331762b318bfd12c5236e0299f25
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Wed Sep 25 18:33:08 2019 -0400
+
+    -> Adding an empty README.md file
+
+Answer: the most recent is Fri Feb 28 21:20:03 2025
+
+4. Mention two reasons why branches are used in a Git repository (4 points)
+
+isolation features and experimentation. Isolation features are used because it allows developers to work on different parts without affecting the main code base. Lastly, experimentation is used because it allows the developers to experiment without changing or affecting the main branch.
+
+5. What is the difference between git log and git status? (4 points)
+
+git log displays the commit history while git status displays the current states of the current working directory.
+
+6. What command would you use to see the commits where “Vehicle.h” was one of the committed files? (4 points)
+
+git log --oneline -- "Vehicle.h"
+
+7. What command would you use to see the commits whose commit message contains the word “file”? (4 points)
+
+git log --grep="file"
+
+8. In the context of object-oriented programming (I) What is inheritance? (II) What is polymorphism? (III) What is encapsulation? (6 points)9.  
+
+1) Inheritance is a technique in object-oriented programming that enables one class to derive attributes and functions from another class. It facilitates code reusability and the creation of connections between different classes.
+2) Polymorphism denotes the capacity for various classes to be regarded as instances of a single class via a common interface, usually by overriding methods.
+3) Encapsulation refers to the combining of data (attributes) and methods (functions) that act on the data into a single unit or class. It serves to limit direct access to certain components of an object, which is frequently utilized to safeguard object integrity by avoiding external interference and abuse.
+
+9. What is the main difference between the “Dictator and Lieutenants” workflow and the “Integration manager” workflow? (5 points)
+
+Dictator and Lieutenants: Within this workflow, a primary "dictator" is responsible for making the ultimate decisions, while "lieutenants" (developers) carry out those decisions in their specific domains.
+Integration Manager: In this workflow, a specialized integration manager takes charge of the process of merging code from various developers, making sure the code integrates smoothly.
+
+10. How would a team of 100 developers benefit from following the “Dictator and Lieutenants” workflow instead of the “Centralized” workflow? (5 points)
+
+In a group of 100 developers, the Dictator and Lieutenants workflow would be advantageous as it facilitates improved allocation of tasks and decision-making. The "lieutenants" can oversee particular domains or features, whereas the "dictator" guarantees overall coordination, reducing bottlenecks. Conversely, a Centralized workflow could be excessively slow and unwieldy since every decision would have to pass through one central point of authority.
