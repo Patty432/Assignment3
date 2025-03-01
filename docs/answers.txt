@@ -1,3 +1,10 @@
+List the date when you went through the Git Lab Tutorials:
+Fri. Feb. 28, 2025 | Main – Introduction Sequence 
+Fri. Feb. 28, 2025 | Remotes – Push & Pull -- Git Remote
+Lisst the dates when you setup the GitHub Account.  If this was some time ago a rough estimate will do.
+Around Jan. 6, 2025. During the first week of class aproximately. 
+
+
 1. Paste the console output you saved at the end of step 3.C (2 points)
 
 Enumerating objects: 5, done.
